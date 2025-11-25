@@ -1,0 +1,255 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0; padding: 0; font-family: Arial, sans-serif;
+  background : #fdd7e1;
+  color: #9f4343;
+  font-family : Palatino;
+}
+
+/* Barre de navigation horizontale */
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdd7e1;
+  color: #9f4343;
+  padding: 0 1rem;
+  font-size : 1.5rem;
+  font-weight:bold;
+  margin-bottom: 1rem;
+ 
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; margin: 0;
+  flex-grow: 1;
+}
+nav ul li {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+/* Division horizontale intégrée dans la navbar */
+
+
+nav .divider {
+  height: 2rem;
+  background-color: white;
+  flex : 1;
+  padding-left: 10%;
+  margin : 0.5rem;
+  padding:0.5rem;
+  width : 100%;
+ 
+}
+
+.blanc {
+	background-color:white;
+	height : 2vh;
+	margin-left:5%;
+  margin-right:5%;
+}
+
+
+/* Conteneur principal : 3 divisions verticales */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 52px); /* hauteur nav environ 52px */
+  color: #9f4343;
+  margin-left:5%;
+  margin-right:5%;
+ 
+ 
+  
+}
+
+/* premières deux colonnes verticales prennent un peu moins que 1/3, dernière 1/3 */
+.vertical {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #9f4343;
+  
+}
+.vertical1 {
+  flex: 1 1 30%;
+background-color: white;
+color: #9f4343;
+gap: 1rem;
+}
+
+.vertical2 {
+  flex: 1 1 35%;
+  background-color:white;
+  color: #9f4343;
+  gap: 1rem;
+}
+.vertical3 {
+  flex: 1 1 35%;
+  background-color:white; 
+  color: #9f4343;
+  gap: 1rem;
+}
+
+
+
+
+/* Celle du milieu se divise en 2 horizontales */
+.middle-horizontal {
+  display: flex;
+  color: #9f4343;
+  flex-direction: row;
+  margin: 1rem;
+  flex : 1;
+  gap: 1rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .vertical1, .vertical2, .vertical3 {
+    flex: 1 1 100%;
+    height: auto;
+    margin-bottom: 10px;
+	 
+  }
+}
+
+
+h1 { background : #fdd7e1;
+color: #9f4343;
+padding : 0.5rem;
+font-size : 1.8rem;
+padding-left: 5%;
+margin : 0; 
+}
+
+h3 { background : #fdd7e1;
+color: #9f4343;
+padding : 0.5rem;
+font-size : 1rem;
+padding-left: 10%;
+margin : 0; 
+}
+
+h2 {
+	background : #fdd7e1;
+	color: #9f4343;
+	border-radius: 0.6rem 0.6rem 5rem 5rem;
+	margin : 0;    /* supprime la marge du h2 */
+  padding : 0.5rem;
+  font-size : 1rem;
+  padding-left: 10%;
+}
+
+p {
+	margin : 0.8rem;
+	padding : 0.2rem;
+}
+
+
+.grand_rectangle1 {
+	background-color: white; 
+  color: black;
+  border : solid 0px white;
+  border-radius : 0px;
+  height: 35vh;
+}
+
+.grand_rectangle2 {
+	background-color: white; 
+  color: black;
+  border : solid 0px white;
+  border-radius : 0px;
+  height: 65vh;
+}
+
+.petit_rectangle {
+  background-color: white; 
+  color: black;
+  border : solid 5px #fdd7e1;
+  border-radius : 0px;
+  flex : 1;
+  height: auto; 
+}
+
+.arrondi {
+  background-color: white; 
+  color: black;
+  border : solid 5px #fdd7e1;
+  border-radius : 10px;
+  flex : 1;
+  height: auto; 
+}
+
+.arrondi4 {
+  background-color: white; 
+  color: black;
+  border : solid 5px #fdd7e1;
+  border-radius : 0.6rem;
+  height: 75vh;
+}
+
+a {
+	text-decoration : none;
+	color: #9f4343;
+}
+	
+	
+li > a:hover {
+	text-decoration : underline;
+	color: #C76363;
+}
+	
+
+a > span.page_en_cours {
+	color : #FF75B8;
+	text-decoration:underline;
+}
+
+
+.fade-in{opacity:0;animation:fadeIn 1s forwards}
+.slide-up{opacity:0;transform:translateY(20px);animation:slideUp 1s forwards 0.2s}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes slideUp{to{opacity:1;transform:translateY(0)}}
+
+a.clic {
+	color : #47313B;
+	text-decoration:none;
+	font-weight:bold;
+	font-size :1.3rem;
+}
+
+a.clic:hover {
+	color: #9f4343;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size :1.3rem;
+}
+
+
+/* les identifiants */
+
+#etoile
+  {
+      width: 20rem; /* largeur de l'image */
+      height: auto; /* conserve les proportions */
+      display: block; /* optionnel, pour un meilleur contrôle */
+    }
+  
+ #livre { 
+		float: left;
+		width: 15rem; 
+		margin-right: 1rem;
+		margin-left :1rem;
+		border-radius : 1rem;
+		
+ }

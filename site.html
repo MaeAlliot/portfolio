@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Site Transformé</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#">Matriarcast</a>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#matriarcast">Matriarcast</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<section class="hero container">
+  <h1 class="fade-in">WELCOME HERE !</h1>
+  <p class="lead slide-up">Un espace dédié au féminisme, au podcast, à la recherche et à la critique.</p>
+</section>
+
+<section class="gallery container">
+  <h2>Images extraites du PDF</h2>
+  <div class="grid">
+    <div class="img-wrap zoom-hover"><img src="image_0_0.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_1.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_2.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_3.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_4.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_5.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_6.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_7.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_8.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_9.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_10.jpg" alt=""></div><div class="img-wrap zoom-hover"><img src="image_0_11.jpg" alt=""></div>
+  </div>
+</section>
+
+<footer class="site-footer container">
+  <p>© Matriarcast</p>
+</footer>
+
+<script>
+const btn=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.main-nav');
+btn.addEventListener('click',()=>nav.classList.toggle('open'));
+</script>
+</body>
+</html>
