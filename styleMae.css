@@ -6,7 +6,7 @@ body, html {
   margin: 0; padding: 0; font-family: Arial, sans-serif;
   background : #fdd7e1;
   color: #9f4343;
-  font-family : Palatino;
+  font-family : Lora;
 }
 
 /* Barre de navigation horizontale */
@@ -73,6 +73,7 @@ nav .divider {
   flex-direction: column;
   padding: 10px;
   color: #9f4343;
+  height:auto;
   
 }
 .vertical1 {
@@ -80,6 +81,7 @@ nav .divider {
 background-color: white;
 color: #9f4343;
 gap: 1rem;
+height: auto; 
 }
 
 .vertical2 {
@@ -87,26 +89,16 @@ gap: 1rem;
   background-color:white;
   color: #9f4343;
   gap: 1rem;
+  height: auto; 
 }
 .vertical3 {
   flex: 1 1 35%;
   background-color:white; 
   color: #9f4343;
   gap: 1rem;
+  height: auto; 
 }
 
-
-
-
-/* Celle du milieu se divise en 2 horizontales */
-.middle-horizontal {
-  display: flex;
-  color: #9f4343;
-  flex-direction: row;
-  margin: 1rem;
-  flex : 1;
-  gap: 1rem;
-}
 
 
 /* Responsive */
@@ -119,6 +111,7 @@ gap: 1rem;
     flex: 1 1 100%;
     height: auto;
     margin-bottom: 10px;
+	
 	 
   }
 }
@@ -130,6 +123,7 @@ padding : 0.5rem;
 font-size : 1.8rem;
 padding-left: 5%;
 margin : 0; 
+position : relative;
 }
 
 h3 { background : #fdd7e1;
@@ -155,7 +149,24 @@ p {
 	padding : 0.2rem;
 	font-size:1.3rem;
 	
+	
 }
+
+
+
+
+/* Celle du milieu se divise en 2 horizontales */
+.middle-horizontal {
+  display: flex;
+  color: #9f4343;
+  flex-direction: row;
+  margin: 1rem; 
+  gap: 1rem;
+  height: 20vh; 
+}
+
+
+
 
 
 .grand_rectangle1 {
@@ -180,7 +191,7 @@ p {
   border : solid 5px #fdd7e1;
   border-radius : 0px;
   flex : 1;
-  height: auto; 
+  height: 20vh; 
 }
 
 .arrondi {
@@ -189,7 +200,7 @@ p {
   border : solid 5px #fdd7e1;
   border-radius : 10px;
   flex : 1;
-  height: auto; 
+  height: 20vh; 
 }
 
 .arrondi4 {
@@ -197,7 +208,18 @@ p {
   color: black;
   border : solid 5px #fdd7e1;
   border-radius : 0.6rem;
-  height: 75vh;
+  height: 40vh;
+}
+
+.arrondi2 {
+  background-color: white; 
+  color: black;
+  border : solid 5px #fdd7e1;
+  border-radius : 0.6rem;
+  height: 25vh;
+  
+  
+  
 }
 
 a {
@@ -228,6 +250,7 @@ a.clic {
 	text-decoration:none;
 	font-weight:bold;
 	font-size :1.3rem;
+	margin-left:3%;
 }
 
 a.clic:hover {
@@ -242,10 +265,16 @@ a.clic:hover {
 
 #etoile
   {
-      width: 20rem; /* largeur de l'image */
+      width: 25rem; /* largeur de l'image */
       height: auto; /* conserve les proportions */
       display: block; /* optionnel, pour un meilleur contrôle */
-    }
+	  transition: transform 3s ease; /* durée lente de 3 secondes */
+}
+
+#etoile:hover {
+  transform: rotate(360deg); /* rotation complète */
+}
+    
   
  #livre { 
 		float: left;
@@ -255,3 +284,81 @@ a.clic:hover {
 		border-radius : 1rem;
 		
  }
+ 
+ #trombonne {
+	 position: absolute; 
+	 top: 0; 
+	 left: 	 30; 
+	 z-index: 10;
+	 width: 5rem;
+ }
+ 
+  #apareil {
+	 position: absolute; 
+	 top: 0; 
+	 left: 30; 
+	 z-index: 10;
+	 width: 5rem;
+ }
+ 
+  #fraise1 {
+	 position: absolute; 
+	 top: 0%; 
+	 right: 5%; 
+	 z-index: 10;
+	 width: 8rem;
+ }
+ 
+  #fraise2 {
+	 position: absolute; 
+	 top: 0; 
+	 right: 10%; 
+	 z-index: 10;
+	 width: 5rem;
+ }
+ 
+  #pilelivre { 
+		float: left;
+		width: 10rem; 
+		margin-right: 1rem;
+		margin-left :1rem;
+		border-radius : 1rem;
+		margin-top : 10rem;	
+ }
+ 
+  #fleur1 { 
+		float: left;
+		width: 8rem; 
+		margin-right: 1rem;
+		margin-left :1rem;
+		border-radius : 1rem;
+		
+ }
+ 
+  #fleur2 { 
+		float: left;
+		width: 8rem; 
+		margin-right: 1rem;
+		margin-left :1rem;
+		border-radius : 1rem;
+		
+ }
+ 
+  #cassette { 
+		float: left;
+		width: 15rem; 
+		margin-right: 1rem;
+		margin-left :30%;
+		border-radius : 1rem;
+		
+ }
+ 
+  #machine { 
+		float: left;
+		width: 10rem; 
+		margin-right: 1rem;
+		margin-left :1rem;
+		border-radius : 1rem;
+		
+ }
+ 
