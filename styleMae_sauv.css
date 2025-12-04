@@ -59,18 +59,14 @@ nav .divider {
 .container {
   display: flex;
   flex-wrap: wrap;
-  
+  height: calc(100vh - 52px); /* hauteur nav environ 52px */
   color: #9f4343;
   margin-left:5%;
   margin-right:5%;
-    
+ 
+ 
+  
 }
-
-.container {
-  min-height: calc(100vh - 52px);
-}
-
-
 
 /* premières deux colonnes verticales prennent un peu moins que 1/3, dernière 1/3 */
 .vertical {
@@ -122,7 +118,6 @@ height: auto;
 }
 
 
-
 h1 { background : #fdd7e1;
 color: #9f4343;
 padding : 0.5rem;
@@ -168,7 +163,7 @@ p {
   flex-direction: row;
   margin: 1rem; 
   gap: 1rem;
-  height: auto;  
+  height: 20vh; 
 }
 
 
@@ -180,7 +175,7 @@ p {
   color: black;
   border : solid 0px white;
   border-radius : 0px;
-  height: auto; 
+  height: 40vh;
 }
 
 .grand_rectangle2 {
@@ -188,7 +183,7 @@ p {
   color: black;
   border : solid 0px white;
   border-radius : 0px;
-  height: auto; 
+  height: 65vh;
 }
 
 .petit_rectangle {
@@ -197,7 +192,7 @@ p {
   border : solid 5px #fdd7e1;
   border-radius : 0px;
   flex : 1;
-  height: auto;  
+  height: 20vh; 
 }
 
 .arrondi {
@@ -206,7 +201,7 @@ p {
   border : solid 5px #fdd7e1;
   border-radius : 10px;
   flex : 1;
-  height: auto; 
+  height: 20vh; 
 }
 
 .arrondi4 {
@@ -214,7 +209,7 @@ p {
   color: black;
   border : solid 5px #fdd7e1;
   border-radius : 0.6rem;
-  height: auto; 
+  height: 70vh;
 }
 
 .arrondi2 {
@@ -222,7 +217,7 @@ p {
   color: black;
   border : solid 5px #fdd7e1;
   border-radius : 0.6rem;
-  height: auto; 
+  height: 36vh;
    }
 
 .arrondi5 {
@@ -230,8 +225,7 @@ p {
   color: black;
   border : solid 5px #fdd7e1;
   border-radius : 0.6rem;
-  height: auto; 
-  margin : 3%;
+  min-height: 30vh;
    }
    
 a {
@@ -281,8 +275,6 @@ a.clic:hover {
       height: auto; /* conserve les proportions */
       display: block; /* optionnel, pour un meilleur contrôle */
 	  transition: transform 3s ease; /* durée lente de 3 secondes */
-	  margin: 0.5rem auto;
-		padding: 0.5rem;
 }
 
 #etoile:hover {
@@ -292,15 +284,11 @@ a.clic:hover {
   
  #livre { 
 		float: left;
-		height : auto;
+		width: 15rem; 
 		margin-right: 1rem;
 		margin-left :1rem;
 		border-radius : 1rem;
-		width: 100%;
-		max-width: 15rem;
-		margin: 0.5rem auto;
-		padding: 0.5rem;
-		
+				
  }
  
  #trombonne {
@@ -309,8 +297,6 @@ a.clic:hover {
 	 left: 	 30; 
 	 z-index: 10;
 	 width: 5rem;
-	 margin: 0.5rem auto;
-		padding: 0.5rem;
  }
  
   #apareil {
@@ -319,8 +305,6 @@ a.clic:hover {
 	 left: 30; 
 	 z-index: 10;
 	 width: 5rem;
-	 margin: 0.5rem auto;
-		padding: 0.5rem;
  }
  
   #fraise1 {
@@ -329,8 +313,6 @@ a.clic:hover {
 	 right: 5%; 
 	 z-index: 10;
 	 width: 8rem;
-	 margin: 0.5rem auto;
-		padding: 0.5rem;
  }
  
   #fraise2 {
@@ -339,8 +321,6 @@ a.clic:hover {
 	 right: 10%; 
 	 z-index: 10;
 	 width: 5rem;
-	 margin: 0.5rem auto;
-		padding: 0.5rem;
  }
  
   #pilelivre { 
@@ -350,8 +330,6 @@ a.clic:hover {
 		margin-left :1rem;
 		border-radius : 1rem;
 		margin-top : 10rem;	
-		margin: 0.5rem auto;
-		padding: 0.5rem;
  }
  
   #fleur1 { 
@@ -360,8 +338,6 @@ a.clic:hover {
 		margin-right: 1rem;
 		margin-left :1rem;
 		border-radius : 1rem;
-		margin: 0.5rem auto;
-		padding: 0.5rem;
 		
  }
  
@@ -371,19 +347,15 @@ a.clic:hover {
 		margin-right: 1rem;
 		margin-left :1rem;
 		border-radius : 1rem;
-		margin: 0.5rem auto;
-		padding: 0.5rem;
 		
  }
  
   #cassette { 
 		float: left;
-		width: 12rem; 
+		width: 10rem; 
 		margin-right: 1rem;
 		margin-left :10%;
 		border-radius : 1rem;
-		margin: 0.5rem auto;
-		padding: 0.5rem;
 		
  }
  
@@ -393,8 +365,7 @@ a.clic:hover {
 		margin-right: 1rem;
 		margin-left :1rem;
 		border-radius : 1rem;
-		padding: 0.5rem;
-		margin: 0.5rem auto;
+		
  }
  
  #qr_code 
@@ -404,9 +375,8 @@ a.clic:hover {
 		margin-right: 1rem;
 		margin-left :1rem;
 		border-radius : 1rem;
-		margin: 0.58rem auto;
-		padding: 0.5rem;
 		
  }
+ 
  
  
